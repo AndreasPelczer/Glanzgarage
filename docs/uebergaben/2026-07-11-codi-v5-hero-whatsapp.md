@@ -13,8 +13,10 @@ Kundendaten/Externes bleiben draußen; GitHub = Wahrheit; Heimat der Repos ab he
 1. **v5 eingespielt** (Falbe-Paket) in beide Repos. Abnahme bestanden.
 2. **Fake-Google-Bewertungen ausgeblendet** (`#bewertungen hidden`, Var. A). 3 erfundene Reviews (Sabine R./Thomas K./Melanie B.) — Verstoß gegen echt-statt-behauptet + Abmahnrisiko. ⚠️ `hidden` lässt die Fake-Texte noch im Quelltext → **vor Go-live Var. B** (echtes Feedback, z.B. Instagram `@info.rentus`).
 3. **WhatsApp-Audit + Bugfix:** „Name: -" in der Buchungs-Anfrage gefixt (3D-Check-Feld „Fahrzeug & Name" → wandert jetzt ins Namensfeld). Fahrzeugtyp-Übernahme war KEIN Bug (das „Bus/Van" im Test war manuelle Wahl). Nur EIN Button liefert Bild+Liste (`navigator.share`, nur mobil) — technische wa.me-Grenze, kein Fehler.
-4. **Hero-Video mobil** (pingpong-Loop) live: `hero__bg` → `<video class=hero__video>` + `<picture class=hero__pic>` Fallback, CSS zeigt Video nur `@max-width:700px`, Desktop behält Foto. Video-Asset `HTTP 200`, CSS-Regel live.
-- **Cache-Stand jetzt: v=7.** Commits u.a. Glanzgarage `1969344`, deadrabbit `73f82ba`.
+4. **Hero-Video mobil** (pingpong-Loop) live: `hero__bg` → `<video class=hero__video>` + `<picture class=hero__pic>` Fallback, CSS zeigt Video nur `@max-width:700px`, Desktop behält Foto. Video-Asset `HTTP 200`.
+   - **Nachgezogen a):** mobil aufgehellt — dunkler `hero__bg::after`-Overlay oben/mittig heller (.42/.30 statt .72/.55, unten dunkel für Textlesbarkeit) + Video `filter:brightness(1.3)`. Andreas: „passt".
+   - **Nachgezogen b):** Seite startete unten/mittig statt oben (Safari-**Scroll-Restore**, Landepunkt wanderte). Fix: `history.scrollRestoration='manual'` + `scrollTo(0,0)` auf `load` UND `pageshow` (bfcache), wenn kein `#`-Anker; 3D-Check-iframe auf `loading="lazy"`. **Getestet: Chrome/Mac/iPhone-Safari starten alle oben.** ✅
+- **Cache-Stand jetzt: v=10.** Commits u.a. Glanzgarage `f55672d`, deadrabbit `cb293c4`.
 
 ## Kollision (Lehre)
 Andreas hat parallel per GitHub-Upload die Video-Rohdatei hochgeladen, während Codi lokal die Verkabelung baute → non-fast-forward. Sauber per Rebase gelöst (Upload = nur Datei, Verkabelung = Codi). **Nächstes Mal kurz abstimmen, wer welches Feature macht.**
