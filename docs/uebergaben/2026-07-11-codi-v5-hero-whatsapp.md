@@ -17,13 +17,15 @@ Kundendaten/Externes bleiben draußen; GitHub = Wahrheit; Heimat der Repos ab he
    - **Nachgezogen a):** mobil aufgehellt — dunkler `hero__bg::after`-Overlay oben/mittig heller (.42/.30 statt .72/.55, unten dunkel für Textlesbarkeit) + Video `filter:brightness(1.3)`. Andreas: „passt".
    - **Nachgezogen b) „Seite startet nicht oben":** mehrere Ursachen abgearbeitet — (1) 3D-Check-iframe `loading="lazy"`; (2) Safari-Scroll-Restore via `scrollTo(0,0)` auf `load`+`pageshow`; (3) **eigentliche Ursache:** Nav-Klicks hinterließen einen `#anker` in der URL, der beim **Teilen** mitwanderte → geteilte Seite startete mitten drin. Fix: Nav-Klicks halten die URL sauber (`replaceState`), beim Laden wird ein Sektions-Anker entfernt + nach oben (nur `#buchung` bleibt).
    - ⚠️ **LEHRE (wichtig, nicht nochmal jagen):** Am Ende lag's an **iPhone-Safari-Cache** — normaler Tab zeigte die alte Version, **privater Tab startete oben**. `?v=`-Cache-Bump bustet nur Assets, NICHT die HTML selbst; Safari kann die alte HTML servieren. Bei „geht auf Chrome, nicht auf Safari": **erst privaten Tab testen**, bevor man Code jagt.
-- **Cache-Stand jetzt: v=11.** Commits u.a. Glanzgarage `4a6ad40`, deadrabbit `fb793fe`.
+- **Cache-Stand jetzt: v=12.** (v=11 Scroll-Fix, v=12 Kontaktformular→WhatsApp.)
+
+**GEPLANT (morgen früh, siehe `docs/ideen.md`):** WhatsApp-Sachen + **Buchung↔3D-Check verschmelzen** („beides anbieten", optional) auf Branch `feature/buchung-3d-fusion`. Dazu **Innenraum-Check-Idee** (Flecken markieren). **Modelle noch nicht einsatzbereit** (in `tools/3d-check/models-neu/`: OBJs ohne vollständige .mtl/Texturen, GLBs zu groß — via Meshy zu leichten GLBs aufbereiten; NICHT ins Repo committen, ~40 MB). Demo läuft mit den alten, funktionierenden Modellen.
 
 ## Kollision (Lehre)
 Andreas hat parallel per GitHub-Upload die Video-Rohdatei hochgeladen, während Codi lokal die Verkabelung baute → non-fast-forward. Sauber per Rebase gelöst (Upload = nur Datei, Verkabelung = Codi). **Nächstes Mal kurz abstimmen, wer welches Feature macht.**
 
 ## Offen
-- **Formspree:** Kontaktformular-Action ist noch Platzhalter `DEIN-FORMSPREE-CODE` → Formular schickt ins Leere. Braucht Andreas' echte Form-ID ODER Formular für Demo ausblenden.
+- **Formspree:** ✅ ERLEDIGT (Demo-Flick, v=12) — Kontaktformular-Action war Platzhalter `DEIN-FORMSPREE-CODE` (schickte ins Leere). Jetzt: **Formular → WhatsApp** (submit öffnet wa.me mit Name/E-Mail/Telefon/Nachricht, Pflichtfelder greifen). Offen für morgen: entscheiden, ob echtes Formspree/E-Mail-Backend gewünscht, oder WhatsApp-Routing bleibt (passt zum WhatsApp-Thema).
 - **Bewertungen Var. B:** echtes Feedback rein. Mike hat KEINE Google-Bewertungen, nur Instagram `@info.rentus`. Für echte Google-Reviews bräuchte Mike ein **Google Unternehmensprofil** (kostenlos, macht ihn auch in Maps/Suche sichtbar).
 - **3D-Modelle + Bus:** bessere Modelle kommen im richtigen Format (**OBJ+MTL**, `models/<slot>/car.obj`+`car.mtl`), Loader NICHT umstellen. Bus = evtl. 6. Slot. Slot-Zuordnung + `unbenannt.glb`-Klärung offen. Neue Modelle lösen evtl. die Orientierungs-Frage (globales `FRONT_POSITIV` reicht bei mehreren Modellen nicht).
 - **Augen-Checks (Andreas, Handy):** Hero-Video mobil, WhatsApp Bild+Liste.
