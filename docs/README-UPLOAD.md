@@ -33,8 +33,11 @@ leather-seats.jpg, ferrari-wheel.jpg, polish-taillight.jpg, engine.jpg,
 porsche-matte.jpg, polish-porsche.jpg. (mike.jpg und logo.png bleiben!)
 
 ## Noch offen (Welle 2+)
-- Buchungs-Wizard (Fahrzeugwahl → Paket → Halbtags-Slot)
-- 3D-Check-Integration + bessere Modelle
+- Buchungs-Wizard/3D-Check-Integration ist als v1 lokal vorbereitet:
+  `docs/uebergaben/2026-07-11-autocheck-whatsapp.md`
+- Änderungen vor Livegang nach `deadrabbit-landing` pushen und auf
+  `https://pelczer.de/rentus/` + `https://pelczer.de/3d-check/` gegenprüfen
+- Bessere/komprimierte 3D-Modelle
 - Kontaktformular-Backend (wohin geht "Nachricht senden"?)
 - Google-Bewertungs-Link (aktuell #) — Mikes Google-Profil-Link eintragen
 - Hero-Video, falls Mike liefert

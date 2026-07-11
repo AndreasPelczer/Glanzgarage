@@ -29,9 +29,17 @@ site/
 
 2. **Online-Terminbuchung**
    Die alte Seite hatte einen WordPress-Buchungskalender (BookingPress). Auf einer
-   statischen Seite gibt es den nicht 1:1. Aktuell führen alle „Termin buchen"-Buttons
-   zum Kontaktbereich (WhatsApp/Anruf/Formular). Wenn ein echter Online-Kalender
-   gewünscht ist → z. B. Calendly oder eTermin einbinden (Zusatzaufwand).
+   statischen Seite gibt es den nicht 1:1. Der aktuelle Weg ist ein
+   Buchungs-Wizard mit WhatsApp-/Mail-Ausgabe. Fahrzeugtyp, Paket, Abholung und
+   Wunschtermin werden in eine fertige Anfrage übertragen; SUV/Bus/Van +20 %
+   wird eingerechnet. Für echte Kalender-Slots später z. B. Calendly/eTermin
+   oder Kalender-Backend anbinden.
+
+3. **3D-Check / WhatsApp**
+   Der 3D-Check kann eine Mängelliste an den Buchungs-Wizard übergeben. Auf
+   Mobilgeräten gibt es zusätzlich "Bild + Liste teilen" über die native
+   Share-API. Automatisches WhatsApp-Senden mit Bild ohne Nutzerauswahl ist im
+   Browser nicht zuverlässig möglich; dafür bräuchte man WhatsApp Business API.
 
 ## Gut zu wissen
 - **Schriften** kommen von Google Fonts (extra Zeile im Datenschutz). Wenn keine

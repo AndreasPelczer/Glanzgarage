@@ -13,10 +13,15 @@ Auftragnehmer: Andreas Pelczer (B.I.N.D.A. Verlag) · Crew: Andreas, Falbe, Codi
 
 - **Welle 1 (11.07.2026):** Stock-Fotos komplett ersetzt durch echte Arbeit
   (Kennzeichen verpixelt), 2 echte Vorher/Nachher-Regler, Garagen-Grün #9fb247.
-- **Welle 2 (geplant):** Buchungs-Wizard — Fahrzeugtyp → Paket → Abholung →
-  Wunschtermin → WhatsApp-Anfrage. Später FreeBusy gegen Mikes Kalender.
-- **Welle 3 (geplant):** 3D-Check nativ (Meshy-Modell, komprimiert) + Kamerafahrt.
-- **Geparkt:** "Fauler Hund" (Samstags-Wasch-Abo 60–80 €) — Preis/Turnus bei Mike offen.
+- **Welle 2 v1 (11.07.2026, vorbereitet):** Buchungs-Wizard ist mit
+  Fahrzeugtyp → Paket → Abholung → Wunschtermin → WhatsApp-Anfrage gebaut.
+  SUV/Bus/Van +20 % wird im Wizard und WhatsApp-Text gerechnet.
+- **Welle 2.1 (11.07.2026, vorbereitet):** 3D-Check schreibt eine strukturierte
+  Mängelliste in die Buchung und bietet mobil "Bild + Liste teilen" über die
+  native Share-API an. Siehe `docs/uebergaben/2026-07-11-autocheck-whatsapp.md`.
+- **Welle 3 (geplant):** besseres/komprimiertes 3D-Modell + Kamerafahrt.
+- **Geparkt:** "Fauler Hund" Preis/Turnus bei Mike final klären; technisch wird
+  aktuell 60–80 € bzw. 72–96 € bei SUV/Bus/Van gerechnet.
 
 ## Regeln
 
