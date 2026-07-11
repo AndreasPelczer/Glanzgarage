@@ -94,3 +94,13 @@ Nach Freigabe:
 3. `In Buchung übernehmen` klicken.
 4. In `https://pelczer.de/rentus/#buchung` Paket wählen und WhatsApp-Link prüfen.
 5. Auf iPhone/Android `Bild + Liste teilen` gegen WhatsApp testen.
+
+## Nachtrag — Korrektur nach Nutzerabnahme
+
+Andreas stellte klar: Der 3D-Check soll auf `pelczer.de/rentus` stattfinden,
+nicht als gefühlter Absprung nach `/3d-check/`. Außerdem kam beim Test über
+WhatsApp kein Bild mit.
+
+Weiterführende Übergabe:
+
+`docs/uebergaben/2026-07-11-rentus-embedded-autocheck.md`

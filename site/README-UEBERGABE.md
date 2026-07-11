@@ -36,10 +36,13 @@ site/
    oder Kalender-Backend anbinden.
 
 3. **3D-Check / WhatsApp**
-   Der 3D-Check kann eine Mängelliste an den Buchungs-Wizard übergeben. Auf
-   Mobilgeräten gibt es zusätzlich "Bild + Liste teilen" über die native
-   Share-API. Automatisches WhatsApp-Senden mit Bild ohne Nutzerauswahl ist im
-   Browser nicht zuverlässig möglich; dafür bräuchte man WhatsApp Business API.
+   Der 3D-Check läuft direkt im Rentus-Abschnitt als eingebettetes Werkzeug.
+   Er kann eine Mängelliste an den Buchungs-Wizard übergeben. Auf Mobilgeräten
+   gibt es zusätzlich "Bild + Liste teilen" über die native Share-API. Das
+   geteilte Bild enthält die Mängelliste im Bild selbst, weil WhatsApp Text und
+   Datei je nach Gerät/App-Version getrennt behandeln kann. Automatisches
+   WhatsApp-Senden mit Bild ohne Nutzerauswahl ist im Browser nicht zuverlässig
+   möglich; dafür bräuchte man WhatsApp Business API.
 
 ## Gut zu wissen
 - **Schriften** kommen von Google Fonts (extra Zeile im Datenschutz). Wenn keine

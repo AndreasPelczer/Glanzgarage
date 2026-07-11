@@ -33,8 +33,8 @@ leather-seats.jpg, ferrari-wheel.jpg, polish-taillight.jpg, engine.jpg,
 porsche-matte.jpg, polish-porsche.jpg. (mike.jpg und logo.png bleiben!)
 
 ## Noch offen (Welle 2+)
-- Buchungs-Wizard/3D-Check-Integration ist als v1 lokal vorbereitet:
-  `docs/uebergaben/2026-07-11-autocheck-whatsapp.md`
+- Buchungs-Wizard/3D-Check-Integration ist als v1 umgesetzt:
+  `docs/uebergaben/2026-07-11-rentus-embedded-autocheck.md`
 - Änderungen vor Livegang nach `deadrabbit-landing` pushen und auf
   `https://pelczer.de/rentus/` + `https://pelczer.de/3d-check/` gegenprüfen
 - Bessere/komprimierte 3D-Modelle

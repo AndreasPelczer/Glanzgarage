@@ -16,9 +16,10 @@ Auftragnehmer: Andreas Pelczer (B.I.N.D.A. Verlag) · Crew: Andreas, Falbe, Codi
 - **Welle 2 v1 (11.07.2026, vorbereitet):** Buchungs-Wizard ist mit
   Fahrzeugtyp → Paket → Abholung → Wunschtermin → WhatsApp-Anfrage gebaut.
   SUV/Bus/Van +20 % wird im Wizard und WhatsApp-Text gerechnet.
-- **Welle 2.1 (11.07.2026, vorbereitet):** 3D-Check schreibt eine strukturierte
-  Mängelliste in die Buchung und bietet mobil "Bild + Liste teilen" über die
-  native Share-API an. Siehe `docs/uebergaben/2026-07-11-autocheck-whatsapp.md`.
+- **Welle 2.1 (11.07.2026):** 3D-Check ist direkt im Rentus-Ablauf eingebettet,
+  schreibt eine strukturierte Mängelliste in die Buchung und bietet mobil
+  "Bild + Liste teilen" über die native Share-API an. Siehe
+  `docs/uebergaben/2026-07-11-rentus-embedded-autocheck.md`.
 - **Welle 3 (geplant):** besseres/komprimiertes 3D-Modell + Kamerafahrt.
 - **Geparkt:** "Fauler Hund" Preis/Turnus bei Mike final klären; technisch wird
   aktuell 60–80 € bzw. 72–96 € bei SUV/Bus/Van gerechnet.
