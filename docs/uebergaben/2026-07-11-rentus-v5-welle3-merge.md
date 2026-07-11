@@ -16,14 +16,15 @@ Umgesetzt: beide Repos frisch von GitHub geklont; git-lose Kopie nach
 `~/Alt-Ablage/2026-07-12/` verschoben (nicht gelöscht); `~/Documents/Glanzgarage`-Geist
 unangetastet (für mich unlesbar → Andreas räumt im Finder); `CLAUDE.md` neu angelegt.
 
-## Stand v5 (OFFEN — wartet auf Paket)
-- v5 ist **noch nicht eingespielt**: in `deadrabbit-landing/rentus/index.html` zählt
-  `v=5` = **0** und `details class="mehr"` = **0**. Ziel-Abnahme: `v=5` ×2, `mehr` ×19.
-- `rentus-final-v5.zip` (von Falbe gegen den aktuellen Stand verifiziert) liegt noch
-  nicht lokal — Andreas lädt es aus dem Falbe-Chat nach `~/Downloads`.
-- **Nächster Schritt (Aufgabe 1):** sobald die Zip da ist → in **beide** Repos einspielen
-  (`site/`→`rentus/`, `tools/3d-check/`→`3d-check/`) → committen → pushen →
-  live per `curl` verifizieren (Abnahme oben).
+## Stand v5 (✅ ERLEDIGT — LIVE)
+- `rentus-final-v5.zip` (Falbe-Paket, gegen aktuellen Stand verifiziert) in **beide**
+  Repos eingespielt: `rentus/*`+`3d-check/` (deadrabbit) und `site/*`+`tools/3d-check/`
+  (Glanzgarage). Betroffen: index.html, style.css, main.js, 3d-check/index.html.
+- **Cache-Bump v=4 → v=5.** Hausregel-Diff vor Einbau: Sektionen 15→15, IDs 33→33,
+  **keine verloren.**
+- Commits: Glanzgarage `76bf46e`, deadrabbit-landing `eae2840` (beide `main`, gepusht).
+- **Live-Abnahme bestanden** (`curl https://pelczer.de/rentus/`, ~10 s nach Push):
+  `v=5` = **2**, `details class="mehr"` = **19**. ✓
 
 ## Vorhandener Stand (aus den anderen Übergaben)
 Welle 1 (echte Fotos), Welle 2 (Buchungs-Wizard + WhatsApp, SUV/Bus/Van +20 %),
