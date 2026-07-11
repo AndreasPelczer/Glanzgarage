@@ -1,0 +1,4 @@
+.DS_Store
+originale/
+*.glb
+node_modules/
