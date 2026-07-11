@@ -18,3 +18,12 @@
 - 🟢 Buchungs-Wizard-Konzept steht (Typ→Paket→Abholung→Termin→WhatsApp)
 
 *Erst mergen, dann Neues. — Falbe*
+
+## Nachtrag 12:30 — Vorfall & Lehre
+Beim Welle-1-Einbau entdeckt: Meine Patch-Regex hatte Galerie- UND Über-uns-Sektion
+gefressen (End-Muster verlangte 3 schließende Divs, Galerie hatte 2 — Match
+rutschte durch). Wiederherstellung: Über-uns wortwörtlich aus Grundstein-Commit
+f37f9d0, Galerie neu gesetzt. Abnahme: 24 real-Refs, 13 Sektionen, Tags balanciert.
+**Lehre für die Hausordnung:** Nach jedem automatischen HTML-Patch Sektions-Anzahl
+und ID-Liste gegen das Original diffen — nicht nur prüfen, ob das Neue drin ist,
+sondern ob das Alte noch da ist. Der Grundstein-Commit hat heute seinen Wert bewiesen.
