@@ -5,6 +5,22 @@ Zum Abhaken. Sortiert: erst was den **Launch blockiert**, dann Preise, Inhalte, 
 
 ---
 
+## ✅ MIKE-FEEDBACK RUNDE 1 (13.07., per Sprachnachricht, „erstmal nur diese")
+- **3b Öffnungszeiten:** **Mo–Fr 8–18 Uhr, Samstag nach Vereinbarung.** → einbauen (Kontakt + Footer).
+- **4a Scheinwerfer „nach StVZO":** **RAUS.** → „nach StVZO" aus dem Titel/Text entfernen.
+- **3a Sie/Du:** **„Wir duzen uns alle" → durchgehend DU.** → Sie-Stellen (Hero/Über-uns/Kontakt) auf Du angleichen.
+- **5a E-Mail:** **bleibt `info.rentus@web.de`** (kein IONOS-Postfach). → erledigt, nichts tun.
+- **„Kurzversion der Geschichte" (Über uns):** **bleibt kurz.** → nichts tun.
+
+**Noch offen (kommt in weiteren Runden):** 1a/1b Abo, 2a–2d Preise, 3c Google-Rezensionen, 3d Fauler-Hund-Karte,
+3e alte Detailtexte, 5b BookingPress-Altbuchungen, 6a–6d Mike-Handytest.
+
+**Umsetzung:** noch NICHT deployt — warten auf Andreas-Go (Freeze) bzw. Sammeln der restlichen Runden.
+
+---
+
+---
+
 ## 1) Abo — der größte offene Brocken (Funnel-Bruch)
 - **1a — Wie sollen Abos buchbar sein?** Aktuell springen die 4 „Abo buchen"-Knöpfe in den Buchungs-Wizard,
   aber dort gibt's nur die Pro-Pakete + Fauler Hund → wer ein Abo will, findet es nicht.
