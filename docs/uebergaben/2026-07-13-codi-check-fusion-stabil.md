@@ -40,10 +40,20 @@ Zwischenschritt „Außen komplett 2D" (`aussen.html`) lief, aber Andreas wollte
 3. **Schritt-Sprung gefixt:** Weiter/Zurück → `scrollIntoView` auf aktiven `.wstep` + CSS
    `scroll-margin-top:96px` (Header 76px fix), in `requestAnimationFrame`. Sitzt (Andreas bestätigt).
 
-## Offen / als Nächstes
-- 3D-Modelle bei Bedarf pro Stück kalibrieren (Ausrichtung/Größe) — Andreas fand Stand ok.
+## Session-Abschluss 13.07. — von Andreas abgenommen
+- **Alle 3D-Modelle final ok** (Andreas: „Größe und Stand und Position auch ok"). Einzel-Kalibrierung
+  NICHT nötig → nicht gebaut. Falls doch mal eins schief wirkt: in `loadCar` (`tools/3d-check/index.html`)
+  einen `MODEL_FIX`-Table (rotY/rotX/scaleMul/yOffset je Modell-Key) einziehen und dort nachziehen.
+- **Schritt-Sprung** in der Buchung von Andreas bestätigt („sitzt").
+- **Sonderleistungen** von Andreas bestätigt („kommen mit").
+
+## Offen / als Nächstes (nichts akut)
 - Optionaler Feinschliff: Außen-2D (`aussen.html`, liegt bereit) um Seitenansichten ergänzen — nur falls Mike will.
-- Sonderleistungs-**Preise** stehen als ab-Werte im Text; falls Mike SUV-Zuschlag auch auf Extras will → klären (aktuell KEIN Faktor auf Sonderleistungen).
+- Sonderleistungs-**Preise** stehen als ab-Werte im Text; falls Mike SUV-Zuschlag auch auf Extras will → klären
+  (aktuell KEIN Faktor auf Sonderleistungen).
+- **Tabu bleibt:** Preise/Fauler-Hund/Versiegelungsliste/Launch auf info-rentus.de nur mit Andreas-Go.
+
+**Endstand Session: v=24 / cb=21 live auf pelczer.de/rentus. Beide Repos gepusht (Glanzgarage + deadrabbit).**
 
 ## Tabus unverändert
 Preise / Fauler-Hund / Versiegelungsliste / Launch auf info-rentus.de (BookingPress-Altbuchungen) — ohne Andreas-Go nicht anfassen.
