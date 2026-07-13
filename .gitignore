@@ -3,4 +3,9 @@ originale/
 *.glb
 node_modules/
 tools/3d-check/models-neu/
+tools/3d-check/models-glb/
 *.backup_*
+
+# Web-taugliche, komprimierte Modelle DOCH tracken (klein: ~16 MB total)
+!tools/3d-check/models-web/
+!tools/3d-check/models-web/*.glb
