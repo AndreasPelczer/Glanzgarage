@@ -3,3 +3,4 @@ originale/
 *.glb
 node_modules/
 tools/3d-check/models-neu/
+*.backup_*
