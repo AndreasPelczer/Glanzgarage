@@ -2,12 +2,26 @@
 
 Sammelstelle für geplante Umbauten und Feature-Ideen. GitHub = Wahrheit.
 
-## ✅ LIVE (13.07.2026): Buchung + 3D-Check + Innenraum-Check verschmolzen
-Am Handy verifiziert: Fahrzeug wählen → optional Außen (3D) + Innen (2D) einzeichnen →
-EIN Sende-Knopf → WhatsApp bekommt Text (beide Listen) + EIN kombiniertes Report-Bild
-(Außen+Innen gestapelt; iOS/WhatsApp nimmt nur 1 Datei). Desktop = WhatsApp Web (kein App-Zwang).
+## ✅ LIVE (13.07.2026): Buchung + Außen-Check + Innenraum-Check verschmolzen
+Fahrzeug wählen → optional Außen + Innen einzeichnen → EIN Sende-Knopf → WhatsApp bekommt
+Text (beide Listen) + EIN kombiniertes Report-Bild (Außen+Innen gestapelt; iOS/WhatsApp nimmt
+nur 1 Datei). Desktop = WhatsApp Web (kein App-Zwang).
 Aufgeräumt: Kontaktformular, Schwebe-Button, Panel-eigene WhatsApp-Knöpfe, obere 3D-Sektion — alles raus.
-Cache-Stand v=16. Offen: 7 realistische 3D-Modelle (Andreas via Meshy → GLB → dann Loader auf GLTFLoader umstellen).
+
+### ⚠️ Wende 13.07. nachmittags: Außen von 3D auf 2D umgestellt
+**Grund:** Das 3D-Report-Bild (WebGL→Canvas) kam auf dem iPhone **nicht durch** — nur der Text
+und das Innen-Bild landeten in WhatsApp. Auch der `toDataURL`-Fix half nicht zuverlässig.
+**Lösung (Andreas' Idee):** Außen-Check jetzt als **2D-Canvas-Zeichnung** `tools/3d-check/aussen.html`
+(Auto von oben, direkt auf Canvas gemalt — kein Bild-Asset, kein WebGL, kein SVG). Gleiche
+bombensichere Technik wie der Innenraum-Check. Buchung hört unverändert auf `rentusCheck:'done'`
++ liest `rentusAutoCheck`; in `main.js`/`showZustand` zeigt der Außen-iframe jetzt auf `aussen.html`.
+`tools/3d-check/index.html` (3D) bleibt als Datei liegen, wird aber nicht mehr eingebunden.
+Cache-Stand **v=18 / cb=18**.
+
+**Folge für die Meshy-Modelle:** Für den *Check* braucht es jetzt **keine 3D-Modelle** mehr.
+Die 7 realistischen Modelle wären nur noch Deko — ODER man rendert sie einmal zu Draufsicht-Bildern
+und legt sie hinter `drawCar()` als optischen Ersatz für die schematische Zeichnung. Offen mit Andreas.
+Nächster möglicher Feinschliff: Außen-Skizze evtl. um Seitenansichten ergänzen (Türkratzer-Höhe).
 
 ## 🔨 (erledigt) Buchung + 3D-Check verschmelzen ("Ein Fluss")
 Entscheidung Andreas (11.07.): **beides anbieten** (Einstieg oben UND als Schritt in der Buchung, gleiche Daten dahinter) + Zustand-Schritt **optional/überspringbar**.
