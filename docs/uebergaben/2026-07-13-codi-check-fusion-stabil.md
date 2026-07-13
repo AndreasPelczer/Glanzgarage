@@ -55,5 +55,24 @@ Zwischenschritt „Außen komplett 2D" (`aussen.html`) lief, aber Andreas wollte
 
 **Endstand Session: v=24 / cb=21 live auf pelczer.de/rentus. Beide Repos gepusht (Glanzgarage + deadrabbit).**
 
+## 🧊 FREEZE ab 13.07. abends — Kundenreview läuft
+**Mike prüft die Seite die nächsten ~2 Tage (bis ~15.07.), Frau + weitere haben Mitspracherecht.
+Ihm gefällt es schon sehr gut.** → **KEINE Live-Deploys während des Reviews**, außer echte Bugfixes,
+die Andreas freigibt. Nichts an Inhalt/Struktur ohne sein Go.
+
+### Wartbarkeits-Refactor: GEPLANT, bewusst PAUSIERT (nicht anfangen!)
+Andreas will die Seite wartbarer (MVVM-Geist, kein Framework). Gewählter Weg: **Vanilla-Refactor**.
+Bewusst **verschoben bis nach Mikes Feedback** — weil sein Feedback Inhalte/Preise/Struktur umwerfen
+kann und ein Refactor jetzt (a) reines Bruch-Risiko während des Reviews wäre, (b) doppelte Arbeit.
+Erst Feedback einarbeiten, DANN gegen die finalen Inhalte refactoren.
+
+**Refactor-Plan (Stufen, wenn grün):**
+- **A** `config.js` als eine Datenquelle: WA-Nummer (steht aktuell **29×** hartcodiert!), Mail, Tel.
+  Shared unter `/rentus/assets/js/config.js`, von index.html UND den 3 Check-Tools per absolutem Pfad geladen.
+- **B** Die 3 Check-Tools (index/innen/aussen) zu **einem** `check-core.js` entdoppeln
+  (`render`/`updateSend`/`damageLines` in allen 3, `makeReport`/`buildText` in 2). Größter Wartungs-Gewinn.
+- **C** Pakete/Sonderleistungen/Preise aus HTML-`data-*` → in `config.js`, Wizard-Grids daraus rendern.
+- **D** `?v=`-Cache-Bump automatisieren (aktuell Handarbeit, Stand v=24).
+
 ## Tabus unverändert
 Preise / Fauler-Hund / Versiegelungsliste / Launch auf info-rentus.de (BookingPress-Altbuchungen) — ohne Andreas-Go nicht anfassen.
