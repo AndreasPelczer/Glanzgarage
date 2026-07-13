@@ -60,6 +60,16 @@ Zwischenschritt „Außen komplett 2D" (`aussen.html`) lief, aber Andreas wollte
 Ihm gefällt es schon sehr gut.** → **KEINE Live-Deploys während des Reviews**, außer echte Bugfixes,
 die Andreas freigibt. Nichts an Inhalt/Struktur ohne sein Go.
 
+### ✅ Ausnahme: 2 sichere Textfixes von Andreas freigegeben & LIVE (13.07.)
+Aus dem Falbe-Review (`docs/falbe-review-2026-07-13.md`), reine Texte, kein Preis/Struktur:
+- **#3** FAQ: „über das Kontaktformular" → **„über die Online-Anfrage"** (Formular gibt's nicht mehr).
+- **#8** Absolutaussagen entschärft: „Schimmelsporen vollständig" → **„nahezu vollständig"**;
+  „keine Gerüche zurückbleiben" → **„In aller Regel bleiben keine…"**; „Zufriedenheit garantiert"
+  → **„Deine Zufriedenheit ist unser Anspruch"**. **StVZO bewusst UNANGETASTET (braucht Mike).**
+- Deploy: Glanzgarage-Commit + deadrabbit `1794282`. **Achtung Betrieb:** GitHub-Pages-Build hing ~23 Min
+  auf „building"; leerer Commit `6c925d9` als Nudge hat's gelöst → live um 15:45. (Merke: Pages kann
+  hängen; `git commit --allow-empty` + Push stößt neu an.) HTML-only, KEIN `?v=`-Bump nötig. Stand bleibt v=24.
+
 ### Wartbarkeits-Refactor: GEPLANT, bewusst PAUSIERT (nicht anfangen!)
 Andreas will die Seite wartbarer (MVVM-Geist, kein Framework). Gewählter Weg: **Vanilla-Refactor**.
 Bewusst **verschoben bis nach Mikes Feedback** — weil sein Feedback Inhalte/Preise/Struktur umwerfen

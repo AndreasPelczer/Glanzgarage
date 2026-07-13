@@ -13,7 +13,7 @@ noch fehlt.** Punkte 1–4 vor dem Mike-Test/Launch, Rest kann in eine spätere 
 |---|---|---|---|
 | 1 | **Abos nicht buchbar.** Abo-Bereich hat 4× „Abo buchen" → springt zu #buchung, aber Wizard Schritt 2 kennt nur die 4 Pro-Pakete + Faulen Hund. Wer Abo Premium will, findet es nicht → **größter Funnel-Bruch.** Optionen: (a) Abos als wählbare Leistung in den Wizard, oder (b) Abo-CTAs auf WhatsApp/Anruf mit vorbefülltem Text umleiten (leichterer, risikoärmerer Fix). | Bug/Feature | Andreas (Weg a/b) |
 | 2 | **Abo-Preislogik prüfen.** Abo Plus 99,90 €/**mtl.** vs. Abo Premium 149,90 €/**¼-jährlich** (~50 €/Monat) → Premium mit Handwäsche+Versiegelung wäre *halb so teuer* wie Plus. Übernahmefehler alte Seite (Intervall↔Preis)? Oder Premium/Deluxe = quartalsweise *Leistungen* statt monatliches Abo? → klarer formulieren. | Inhalt/Preis | **Mike** (TABU-Preis) |
-| 3 | **FAQ nennt „Kontaktformular", das es nicht gibt.** Seite hat nur Wizard→WhatsApp, Tel, E-Mail. Wort → „über die Online-Anfrage" o.ä. | reiner Textfix | Andreas |
+| 3 | ✅ **ERLEDIGT (13.07., live).** FAQ „über das Kontaktformular" → „über die Online-Anfrage". | reiner Textfix | Andreas |
 | 4 | **Sie/Du-Mischmasch.** Hero/Über-uns/Kontakt = Sie; Ablauf/FAQ/Buchung = Du. Fällt unbewusst auf. Eins konsequent. Detailing duzt meist. | Inhalt/Stimme | **Mike** |
 
 ## SOLLTE
@@ -23,7 +23,7 @@ noch fehlt.** Punkte 1–4 vor dem Mike-Test/Launch, Rest kann in eine spätere 
 | 5 | **Öffnungszeiten fehlen** (Kontakt + Footer). Kunden & Google erwarten das. Z.B. „Termine nach Vereinbarung, Mo–Sa 8–18 Uhr erreichbar". | Mike (Zeiten) |
 | 6 | **„Der Faule Hund" nur im Wizard.** Mikes charmantestes Produkt + bester Einstiegs-Hook hat keine eigene Karte. Gehört als Karte zu den Abos — der Name allein ist Marketing. | Andreas/Mike |
 | 7 | **Kundenstimmen fehlen.** 2–3 Google-Rezensionen / O-Töne als Vertrauensanker. Falls Google-Bewertungen da: verlinken (Link steht aktuell auf `#`). | Mike (Rezensionen) |
-| 8 | **Zwei juristisch heikle Formulierungen:** „Scheinwerferaufbereitung **nach StVZO**" (Bauartzulassung = Graubereich, absichern oder weicher). Absolutaussagen „neutralisieren Schimmelsporen **vollständig**" + „Zufriedenheit **garantiert**" → wettbewerbsrechtlich angreifbar. Ein „nahezu" kostet nichts. | Andreas (Textfix) + Mike (StVZO) |
+| 8 | 🟡 **TEILS ERLEDIGT (13.07., live):** Absolutaussagen entschärft — „Schimmelsporen vollständig"→„nahezu vollständig", „keine Gerüche zurückbleiben"→„In aller Regel bleiben keine…", „Zufriedenheit garantiert"→„…ist unser Anspruch". **OFFEN:** „Scheinwerferaufbereitung **nach StVZO**" (Bauartzulassung = Graubereich) — bewusst unangetastet, **braucht Mike** (absichern oder weicher). | Andreas (Textfix) + **Mike (StVZO)** |
 | 9 | **E-Mail `info.rentus@web.de` neben Domain `info-rentus.de`** wirkt halbfertig. IONOS-Postfach `info@info-rentus.de` in 5 Min einrichtbar. | Mike (IONOS) |
 
 ## KLEINKRAM (später / Welle 4)
