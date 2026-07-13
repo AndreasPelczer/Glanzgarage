@@ -8,20 +8,24 @@ Text (beide Listen) + EIN kombiniertes Report-Bild (Außen+Innen gestapelt; iOS/
 nur 1 Datei). Desktop = WhatsApp Web (kein App-Zwang).
 Aufgeräumt: Kontaktformular, Schwebe-Button, Panel-eigene WhatsApp-Knöpfe, obere 3D-Sektion — alles raus.
 
-### ⚠️ Wende 13.07. nachmittags: Außen von 3D auf 2D umgestellt
-**Grund:** Das 3D-Report-Bild (WebGL→Canvas) kam auf dem iPhone **nicht durch** — nur der Text
-und das Innen-Bild landeten in WhatsApp. Auch der `toDataURL`-Fix half nicht zuverlässig.
-**Lösung (Andreas' Idee):** Außen-Check jetzt als **2D-Canvas-Zeichnung** `tools/3d-check/aussen.html`
-(Auto von oben, direkt auf Canvas gemalt — kein Bild-Asset, kein WebGL, kein SVG). Gleiche
-bombensichere Technik wie der Innenraum-Check. Buchung hört unverändert auf `rentusCheck:'done'`
-+ liest `rentusAutoCheck`; in `main.js`/`showZustand` zeigt der Außen-iframe jetzt auf `aussen.html`.
-`tools/3d-check/index.html` (3D) bleibt als Datei liegen, wird aber nicht mehr eingebunden.
-Cache-Stand **v=18 / cb=18**.
+### ✅ ENDSTAND 13.07. (nach Ausflug zu 2D und wieder zurück) — Cache **v=19 / cb=19**
+**Was heute passierte:** Das 3D-Report-**Bild** (WebGL→Canvas) kam auf dem iPhone **nicht zuverlässig
+durch** — Text + Innen-Bild ja, Außen-Bild nein. `toDataURL`-Fix half nicht. Dann Ausflug: Außen komplett
+auf 2D-Canvas (`aussen.html`) — funktionierte, aber Andreas fehlte die coole 3D-Auswahl.
 
-**Folge für die Meshy-Modelle:** Für den *Check* braucht es jetzt **keine 3D-Modelle** mehr.
-Die 7 realistischen Modelle wären nur noch Deko — ODER man rendert sie einmal zu Draufsicht-Bildern
-und legt sie hinter `drawCar()` als optischen Ersatz für die schematische Zeichnung. Offen mit Andreas.
-Nächster möglicher Feinschliff: Außen-Skizze evtl. um Seitenansichten ergänzen (Türkratzer-Höhe).
+**Endentscheidung Andreas:** „lieber die stabile Sache mit allen Infos".
+- **Außen = 3D-Check bleibt** (`tools/3d-check/index.html`, Auswählen/Drehen/Kratzer setzen), übernimmt
+  aber **NUR die Liste** (`rentusAutoCheck`). Der Übernehmen-Knopf im Embed baut **kein Bild** mehr
+  (`buildReportImage` wird nicht mehr aufgerufen), sendet nur `postMessage({rentusCheck:'done'})`.
+- **Innen = 2D** (`innen.html`), übernimmt **Liste + Bild**.
+- **WhatsApp:** Text mit **beiden Listen** + **ein** Report-Bild = der Innenraum.
+- `main.js`/`showZustand`: Außen-iframe zeigt wieder auf `/3d-check/?embed=1&typ=…`.
+
+**`aussen.html` bleibt als Datei liegen** (2D-Auto-von-oben, Canvas-gezeichnet) — nicht eingebunden,
+aber brauchbar als Fallback/Baustein, falls das 3D-Bild mal doch weg soll.
+
+**Meshy-Modelle:** weiterhin für den 3D-Check gedacht (Loader OBJ→GLTFLoader umstellen, Typ→Modell mappen).
+Da das 3D nur noch die Liste liefert, sind die Modelle reine **Optik/Auswahl** — kein Zwang fürs Funktionieren.
 
 ## 🔨 (erledigt) Buchung + 3D-Check verschmelzen ("Ein Fluss")
 Entscheidung Andreas (11.07.): **beides anbieten** (Einstieg oben UND als Schritt in der Buchung, gleiche Daten dahinter) + Zustand-Schritt **optional/überspringbar**.
