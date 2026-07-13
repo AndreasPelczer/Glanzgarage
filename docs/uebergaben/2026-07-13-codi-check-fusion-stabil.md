@@ -55,6 +55,18 @@ Zwischenschritt „Außen komplett 2D" (`aussen.html`) lief, aber Andreas wollte
 
 **Endstand Session: v=24 / cb=21 live auf pelczer.de/rentus. Beide Repos gepusht (Glanzgarage + deadrabbit).**
 
+## ⚠️ BETRIEBS-LEHRE 13.07. spät — Glanzgarage IMMER mitpushen
+**Vorfall:** Über den Tag wurde nur **deadrabbit** (Deploy) gepusht, **Glanzgarage** (die „Wahrheit")
+nur lokal committet → das Glanzgarage-**Remote auf GitHub hing 20 Commits zurück (~v16-Ära)**, obwohl
+lokal alles auf v=24 war. Eine QA-Warnung deutete das (falsch) als „8 Versionen nur im Deploy gebaut".
+**Real:** lokal war korrekt & voraus, nur nie gepusht.
+- **Regel (Hausregel schärfen):** Nach JEDEM Commit **beide** Repos pushen — Glanzgarage UND deadrabbit.
+  Check: `git -C ~/XcodeProjects/Glanzgarage status -sb` darf nie „ahead" stehen bleiben.
+- **Falle bei der Reparatur:** NIE „deadrabbit → Glanzgarage zurücksyncen"! Die Wahrheit ist lokal Glanzgarage;
+  sie ist absichtlich **voraus** (z.B. noch nicht deployte Mike-Änderungen). Fix ist immer **`git push` der
+  Quelle**, nie ein Rücksync vom Deploy — sonst löscht man die neueste Arbeit.
+- Am 13.07. gelöst: Glanzgarage lokal (e52dbd8) → origin gepusht, lokal==Remote.
+
 ## 🧊 FREEZE ab 13.07. abends — Kundenreview läuft
 **Mike prüft die Seite die nächsten ~2 Tage (bis ~15.07.), Frau + weitere haben Mitspracherecht.
 Ihm gefällt es schon sehr gut.** → **KEINE Live-Deploys während des Reviews**, außer echte Bugfixes,
