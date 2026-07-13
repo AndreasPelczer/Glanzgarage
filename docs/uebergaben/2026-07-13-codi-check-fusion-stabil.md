@@ -24,10 +24,26 @@ Zwischenschritt „Außen komplett 2D" (`aussen.html`) lief, aber Andreas wollte
   Message-Listener (Zeile ~368): `done`→checkImgAussen (bleibt jetzt null), `innen`→checkImgInnen.
   `combineReports()` stapelt vorhandene Bilder (aktuell nur Innen) zu einem PNG.
 
+## NACHTRAG 13.07. nachmittags — weiter gebaut (Stand jetzt **v=24 / cb=21**)
+1. **Echte Meshy-Modelle** im 3D-Außen-Check (ersetzen OBJ-Platzhalter):
+   - Loader OBJ/MTL → **GLTFLoader + DRACOLoader** (Modelle sind Draco-komprimiert).
+   - 8 GLB von Meshy (20–65 MB) mit `gltf-transform optimize --compress draco --texture-compress webp
+     --texture-size 1024` auf **1–4 MB** geschrumpft (265 → 16 MB total). Liegen in `tools/3d-check/models-web/`.
+   - Roh-GLB (`models-glb/`, 265 MB) bleiben **gitignored**; `models-web/` per `.gitignore`-Ausnahme getrackt.
+   - Typ→Modell: Kleinwagen/Limousine/Kombi/SUV/Bus/Coupé (+ Pickup/Oldtimer als Extra-Chips im Standalone).
+   - Skalierung `scale=4.0` (25% größer), `.stage`-Hintergrund heller (`#3d4650…`).
+   - **Kompressions-Rezept** für weitere Modelle: siehe oben. Node/npx vorhanden.
+2. **Sonderleistungen in der Buchung** (Schritt 2, unter den Paketen):
+   - 10 Stück als **Mehrfachauswahl** (`[data-sonder]`, toggle `.sel`), optional, `state.sonder[]`.
+   - Fließen in `summary()` + `baueText()` (WhatsApp). **Paket-Auto-Sprung entfernt**, damit Extras wählbar bleiben.
+   - CSS: `.wcard--s` / `.wgrid--sonder` in style.css.
+3. **Schritt-Sprung gefixt:** Weiter/Zurück → `scrollIntoView` auf aktiven `.wstep` + CSS
+   `scroll-margin-top:96px` (Header 76px fix), in `requestAnimationFrame`. Sitzt (Andreas bestätigt).
+
 ## Offen / als Nächstes
-- **7 Meshy-Modelle** (Andreas holt sie, GLB): Loader OBJ→GLTFLoader umstellen, Typ→Modell mappen.
-  Da 3D nur noch die Liste liefert, sind Modelle reine Optik/Auswahl — kein Funktionszwang.
-- Optionaler Feinschliff: Außen-2D um Seitenansichten ergänzen (Türkratzer-Höhe) — nur falls Mike will.
+- 3D-Modelle bei Bedarf pro Stück kalibrieren (Ausrichtung/Größe) — Andreas fand Stand ok.
+- Optionaler Feinschliff: Außen-2D (`aussen.html`, liegt bereit) um Seitenansichten ergänzen — nur falls Mike will.
+- Sonderleistungs-**Preise** stehen als ab-Werte im Text; falls Mike SUV-Zuschlag auch auf Extras will → klären (aktuell KEIN Faktor auf Sonderleistungen).
 
 ## Tabus unverändert
 Preise / Fauler-Hund / Versiegelungsliste / Launch auf info-rentus.de (BookingPress-Altbuchungen) — ohne Andreas-Go nicht anfassen.
