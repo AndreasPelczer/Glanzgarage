@@ -2,7 +2,14 @@
 
 Sammelstelle für geplante Umbauten und Feature-Ideen. GitHub = Wahrheit.
 
-## 🔨 In Arbeit: Buchung + 3D-Check verschmelzen ("Ein Fluss")
+## ✅ LIVE (13.07.2026): Buchung + 3D-Check + Innenraum-Check verschmolzen
+Am Handy verifiziert: Fahrzeug wählen → optional Außen (3D) + Innen (2D) einzeichnen →
+EIN Sende-Knopf → WhatsApp bekommt Text (beide Listen) + EIN kombiniertes Report-Bild
+(Außen+Innen gestapelt; iOS/WhatsApp nimmt nur 1 Datei). Desktop = WhatsApp Web (kein App-Zwang).
+Aufgeräumt: Kontaktformular, Schwebe-Button, Panel-eigene WhatsApp-Knöpfe, obere 3D-Sektion — alles raus.
+Cache-Stand v=16. Offen: 7 realistische 3D-Modelle (Andreas via Meshy → GLB → dann Loader auf GLTFLoader umstellen).
+
+## 🔨 (erledigt) Buchung + 3D-Check verschmelzen ("Ein Fluss")
 Entscheidung Andreas (11.07.): **beides anbieten** (Einstieg oben UND als Schritt in der Buchung, gleiche Daten dahinter) + Zustand-Schritt **optional/überspringbar**.
 
 **Problem heute:** Auto wird 2× gewählt (3D-Check-Modell ≠ Buchungs-Typ), 3D-Check ist separater Block, 4 verschiedene WhatsApp-Buttons.
