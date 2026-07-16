@@ -11,7 +11,7 @@ noch fehlt.** Punkte 1–4 vor dem Mike-Test/Launch, Rest kann in eine spätere 
 
 | # | Punkt | Fixart | Entscheider |
 |---|---|---|---|
-| 1 | **Abos nicht buchbar.** Abo-Bereich hat 4× „Abo buchen" → springt zu #buchung, aber Wizard Schritt 2 kennt nur die 4 Pro-Pakete + Faulen Hund. Wer Abo Premium will, findet es nicht → **größter Funnel-Bruch.** Optionen: (a) Abos als wählbare Leistung in den Wizard, oder (b) Abo-CTAs auf WhatsApp/Anruf mit vorbefülltem Text umleiten (leichterer, risikoärmerer Fix). | Bug/Feature | Andreas (Weg a/b) |
+| 1 | ✅ **ERLEDIGT (16.07., live).** Die 4 „Abo buchen"-Knöpfe (Smart/Plus/Premium/Deluxe) öffnen jetzt WhatsApp mit vorbefülltem Text „Interesse an Abo X, bitte Rückruf" (Weg b, `js-abo`/`data-abo` in main.js, Desktop=Web/Handy=wa.me). Kein Preis im Spiel → Preis-Klärung (#2) bleibt separat bei Mike. | erledigt | — |
 | 2 | **Abo-Preislogik prüfen.** Abo Plus 99,90 €/**mtl.** vs. Abo Premium 149,90 €/**¼-jährlich** (~50 €/Monat) → Premium mit Handwäsche+Versiegelung wäre *halb so teuer* wie Plus. Übernahmefehler alte Seite (Intervall↔Preis)? Oder Premium/Deluxe = quartalsweise *Leistungen* statt monatliches Abo? → klarer formulieren. | Inhalt/Preis | **Mike** (TABU-Preis) |
 | 3 | ✅ **ERLEDIGT (13.07., live).** FAQ „über das Kontaktformular" → „über die Online-Anfrage". | reiner Textfix | Andreas |
 | 4 | **Sie/Du-Mischmasch.** Hero/Über-uns/Kontakt = Sie; Ablauf/FAQ/Buchung = Du. Fällt unbewusst auf. Eins konsequent. Detailing duzt meist. | Inhalt/Stimme | **Mike** |
