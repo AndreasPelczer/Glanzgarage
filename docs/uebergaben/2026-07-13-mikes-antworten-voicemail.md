@@ -33,6 +33,15 @@ Hörfehler möglich, Kernaussagen verifiziert. Bezug: `fragen-an-mike-2026-07-13
 - **Frage 4 (Rest):** Premium/Deluxe ¼-jährl. vs. mtl. · SUV +20 % bei Festpreis-Abos? · Abo-Anfrage-Weg (WhatsApp-Direktknopf?).
 - **Frage 5:** Google-Unternehmensprofil-Link + echte Bewertungen ja/nein (Bewertungs-Link steht auf „#").
 
+## 📩 NACHTRAG — weitere WhatsApp-Nachrichten (13.07. abends, später gefunden)
+
+| Zeit | Nachricht (Wortlaut) | Bedeutung / Status |
+|---|---|---|
+| 19:58 | „Ist da dann nur das Bild für innen dabei??? Für Außen steht es zwar da aber sehen kann ich persönlich es nicht…. Oder??" | **Außen-Report = nur Liste, kein Bild.** Bewusst so (13.07.: 3D-Bild kam auf iOS nicht durch). **Mike möchte auch außen ein Bild.** → **Task 18.07.:** `aussen.html` (2D-Draufsicht, Canvas, iOS-tauglich) in den Report einbinden, damit `checkImgAussen` gefüllt wird und `combineReports()` beide Bilder stapelt. |
+| 19:59 | „Ansonsten hat er alles übernommen samt Aufschlag 💪💪👌👌" | SUV/Bus/Van **+20 % im Wizard bestätigt.** ✅ |
+| 21:44 | „Mit den Abos müssen wir auch mal noch schauen, da diese auf die Aufbereitungspakete gehen und so der Preis bestimmt nicht stimmt…" | War die alte **Wizard-Sackgasse** (Abo → Wizard, +20 % fälschlich). **Gefixt v=27:** Abo-Knöpfe (`.js-abo`) → WhatsApp-Rückruf, gehen NICHT in den Wizard; Faktor fasst Abos nicht an. ✅ |
+| 21:47 | „bei den abos wird nur das gemacht was in der Homepage steht zu den jeweiligen Preisen…. Also quasi Festpreise und feste Leistung" | Abos = **Festpreis + feste Leistung.** Aktueller Stand entspricht dem (kein +20 % auf Abos). ✅ (Konkrete Abo-Preiszahlen bleiben Tabu.) |
+
 ## 📋 NOTIZEN
 
 - **Handy-Test läuft über das Handy der Partnerin** (Stefanie) — Mikes eigene Nummer ist die WhatsApp-Business-Nummer, Anfragen an sich selbst gehen nicht. Feedback von fremder Nummer = der Test.
