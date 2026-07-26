@@ -12,11 +12,17 @@ Zuerst außerdem: `docs/uebergaben/` (neueste zuerst) + `docs/alte-website-inven
 ## Repos & Workflow
 - **Glanzgarage** (`~/XcodeProjects/Glanzgarage`) = **Wahrheit / Quelle. Hier bauen.**
   `site/` = Website · `tools/3d-check/` = 3D-Check-Werkzeug · `docs/` = Doku + Übergaben.
-- **deadrabbit-landing** (`~/XcodeProjects/deadrabbit-landing`) = **Deploy.**
+- **deadrabbit-landing** (`~/XcodeProjects/deadrabbit-landing`) = **Deploy (pelczer.de).**
   GitHub Pages → **live auf pelczer.de** (Push auf `main` = live). Live-Ordner: `rentus/`, `3d-check/`.
-- **Ablauf:** in Glanzgarage bauen → nach deadrabbit-landing spiegeln
-  (`site/`→`rentus/`, `tools/3d-check/`→`3d-check/`) → **beide** committen → pushen →
-  **live per `curl` verifizieren.**
+- **info-rentus** (`~/XcodeProjects/info-rentus`) = **Deploy (ECHTE Live-Domain seit 26.07.26).**
+  GitHub Pages + Custom Domain **`info-rentus.de`** (HTTPS via Let's Encrypt, DNS liegt bei
+  Strato: A→185.199.108.153, www CNAME→andreaspelczer.github.io). **Alles an der Wurzel** (nicht
+  in `rentus/`). ⚠️ **`3d-check/` MUSS hier mit rein** — der Wizard lädt absolut `/3d-check/`;
+  fehlt der Ordner → 404 im Buchungs-Wizard (Vorfall 26.07.).
+- **Ablauf:** in Glanzgarage bauen → spiegeln nach **beiden** Deploys:
+  deadrabbit (`site/`→`rentus/`, `tools/3d-check/`→`3d-check/`) UND info-rentus
+  (`site/`→Wurzel, `3d-check/`→`3d-check/`) → committen → pushen →
+  **live per `curl` verifizieren** (`https://info-rentus.de/`).
 - **GitHub ist die einzige Wahrheit.** Sticks/externe Platten sind keine Repo-Heimat
   (Lehre 11.07.: leerer INTENSO-Mount). Kanonische Heimat: `~/XcodeProjects/`.
 - ⚠️ `~/Documents` ist auf diesem Mac TCC-gesperrt (kein Terminal-Zugriff) — dort NICHT arbeiten.
@@ -35,13 +41,13 @@ Zuerst außerdem: `docs/uebergaben/` (neueste zuerst) + `docs/alte-website-inven
 - **Preise** — inkl. offenem **Versiegelungs-Preiskonflikt** (Wachs/Teflon/Nano/Keramik/Graphen
   widersprechen sich alt↔neu, siehe Inventur) und **„Fauler Hund"** Preis/Turnus.
   Nicht raten — ein falscher ab-Preis ist eine Preisdiskussion mit jedem Kunden.
-- **Launch: Provider = Strato** (Andreas' Entscheidung 26.07.26 — ersetzt die frühere
-  IONOS/`info-rentus.de`-Planung). Ziel-Domain noch von Andreas bestätigen lassen.
-  Vorher **BookingPress-Altbuchungen** klären (Export/Übernahme, dann abschalten).
-  **Upload in den Strato-Webspace + Domain verbinden macht Andreas selbst** — die KI
-  fasst Kundenmenü/FTP nicht an. Statisches Upload-Paket baut die KI aus `rentus/`
-  (nur Live-Files, ohne `.backup_*`).
-- Strato/IONOS-Zugangsdaten fasst die KI nicht an.
+- **Launch VOLLZOGEN 26.07.26:** live auf **`info-rentus.de`** (HTTPS 🔒), gehostet über
+  GitHub Pages (Repo `info-rentus`). Strato ist nur **Domain-Registrar** — Seite liegt NICHT
+  bei Strato (SmartWebsite-Baukasten kann keine eigene Seite hosten). DNS bei Strato zeigt
+  auf GitHub. **SmartWebsite Pro läuft noch, wird nicht mehr gebraucht — NICHT kündigen,
+  bis geklärt ist, ob die Domain am Vertrag hängt.** Falls in der alten Baukasten-Seite
+  Terminbuchungen waren: prüfen.
+- Strato/IONOS-Zugangsdaten fasst die KI nicht an; Strato-Kundenmenü/FTP macht Andreas selbst.
 
 ## Offene Klärungen (Mike / Andreas)
 Formspree-Code (Platzhalter `DEIN-FORMSPREE-CODE`) · Google-Bewertungslink (steht auf `#`) ·
