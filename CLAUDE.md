@@ -35,8 +35,12 @@ Zuerst außerdem: `docs/uebergaben/` (neueste zuerst) + `docs/alte-website-inven
 - **Preise** — inkl. offenem **Versiegelungs-Preiskonflikt** (Wachs/Teflon/Nano/Keramik/Graphen
   widersprechen sich alt↔neu, siehe Inventur) und **„Fauler Hund"** Preis/Turnus.
   Nicht raten — ein falscher ab-Preis ist eine Preisdiskussion mit jedem Kunden.
-- **Launch auf `info-rentus.de`** (IONOS, nicht Strato). Vorher **BookingPress-Altbuchungen**
-  klären (Export/Übernahme, dann abschalten).
+- **Launch: Provider = Strato** (Andreas' Entscheidung 26.07.26 — ersetzt die frühere
+  IONOS/`info-rentus.de`-Planung). Ziel-Domain noch von Andreas bestätigen lassen.
+  Vorher **BookingPress-Altbuchungen** klären (Export/Übernahme, dann abschalten).
+  **Upload in den Strato-Webspace + Domain verbinden macht Andreas selbst** — die KI
+  fasst Kundenmenü/FTP nicht an. Statisches Upload-Paket baut die KI aus `rentus/`
+  (nur Live-Files, ohne `.backup_*`).
 - Strato/IONOS-Zugangsdaten fasst die KI nicht an.
 
 ## Offene Klärungen (Mike / Andreas)
