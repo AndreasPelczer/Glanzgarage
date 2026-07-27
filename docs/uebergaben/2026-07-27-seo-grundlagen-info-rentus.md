@@ -33,8 +33,18 @@
 - **Fehlend:** das im Auftrag zitierte Voicemail-Memo `2026-07-26-mike-voicemail-memo.md` existiert
   nicht (galt schon beim Faulhund-Auftrag).
 
-## ⏸️ Offen — Andreas separat (NICHT Teil des Auftrags)
-- **Search Console** einrichten + Sitemap einreichen: `https://info-rentus.de/sitemap.xml`.
+## Google Search Console — Stand 27.07.
+- **Verification-Tag LIVE auf info-rentus.de** (index.html `<head>`):
+  `<meta name="google-site-verification" content="P7G9s4SNvKYvSyrIhcFRIgZmrUCR_eBl94WK5s-kL44">`.
+  ⚠️ Dieser Token stammt aus **Andreas' eigenem** Google-Konto (NICHT Mikes) — bewusst drin gelassen.
+- **Noch NICHT bestätigt / Sitemap noch NICHT eingereicht.** Property-Typ: URL-Präfix
+  `https://info-rentus.de/`, Methode HTML-Tag.
+- **Plan:** Search Console richtig **vor Ort mit Mike** einrichten. Weg ohne 2. Tag: Andreas
+  bestätigt (Tag ist live), dann in *Einstellungen → Nutzer und Berechtigungen* **Mike als Inhaber**
+  hinzufügen. Danach *Sitemaps* → `sitemap.xml` → Senden.
+
+## ⏸️ Offen — Andreas/Mike separat (NICHT Teil des Auftrags)
+- **Search Console** bestätigen + Mike als Inhaber + Sitemap einreichen (`sitemap.xml`) — vor Ort.
 - **Öffnungszeiten final bestätigen** (Mo–Fr 08–18).
 - **`sameAs`** später mit Instagram-Profil füllen (Mike launcht auf Instagram) → dann JSON-LD ergänzen.
 
