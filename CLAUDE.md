@@ -36,6 +36,11 @@ Zuerst außerdem: `docs/uebergaben/` (neueste zuerst) + `docs/alte-website-inven
 - Muster vom Mitbewerber lernen ok — Grafiken/Code nie kopieren.
 - **Jede Sitzung endet mit einer datierten Übergabe** in `docs/uebergaben/`.
 - **Fertig = committet + gepusht + live per `curl` belegt.**
+- **Aktions-Werbung wechseln = nur `site/assets/js/aktionen.js`.** Ein Block pro Aktion mit
+  Von/Bis-Datum; Anleitung steht im Kopf der Datei. Kein HTML anfassen, keine Logik ändern.
+  Ausprobieren mit `?aktion=test` an der URL. (Übergabe 04.08.)
+- ⚠️ **Nie in einem Deploy-Spiegel bauen.** Die Suche nach „rentus" findet vier plausible
+  Ordner — gebaut wird **immer** in `Glanzgarage/site/`. (Verfahrensfehler 04.08.)
 
 ## Tabus (ohne Andreas-Go NICHT anfassen)
 - **Preise** — inkl. offenem **Versiegelungs-Preiskonflikt** (Wachs/Teflon/Nano/Keramik/Graphen
