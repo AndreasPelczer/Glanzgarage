@@ -1,7 +1,12 @@
 # Plan — Mikes Google-Kalender an den Buchungs-Wizard anbinden
 
-**Stand 05.08.2026 · Status: geplant, nichts gebaut. Wartet auf Mikes Antworten
-(`fragen-an-mike-2026-08-05-kalender.md`).**
+**Stand 05.08.2026**
+
+- **K7 (kleine Lösung) ist GEBAUT und LIVE** — „Termin eintragen"-Link in der
+  WhatsApp-Anfrage. Siehe `uebergaben/2026-08-05-kalenderlink-k7.md`.
+- **Stufe 2 (freie Halbtage anzeigen) wartet weiter auf Mikes Antworten**
+  (`fragen-an-mike-2026-08-05-kalender.md`, K1–K6). Der Rest dieses Plans gilt
+  unverändert — er beschreibt den Ausbau, nicht das schon Gebaute.
 
 ---
 

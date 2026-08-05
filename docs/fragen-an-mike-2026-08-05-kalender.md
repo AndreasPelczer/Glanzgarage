@@ -90,7 +90,16 @@ Ehrliche Frage zur Verhältnismäßigkeit: Bei zwei, drei Anfragen die Woche loh
 ganze Aufwand nicht — da ist ein kurzer Rückruf schneller. Ab etwa fünf pro Woche
 fängt es an, sich zu rechnen.
 
-## K7 — Die kleine Lösung als Alternative
+## K7 — ✅ ERLEDIGT, ist seit 05.08. live
+
+Andreas hat entschieden, damit anzufangen. **Mike muss dazu nichts tun und nichts
+beantworten** — einfach beim nächsten Mal die Anfrage ansehen, ganz unten steht der Link.
+Details: `uebergaben/2026-08-05-kalenderlink-k7.md`.
+
+Die Fragen K1–K6 bleiben offen und betreffen nur den Ausbau (freie Tage anzeigen).
+
+<details>
+<summary>ursprünglicher Vorschlag</summary>
 
 Falls K1 wackelt (Kalender nicht lückenlos) oder K6 klein ausfällt:
 
@@ -99,6 +108,8 @@ mehr ab, ein Klick und der Termin steht — mit Fahrzeug, Leistung und Preis dri
 Zugriff auf deinen Kalender nötig, kein Datenschutzthema, in einem Tag gebaut.
 
 **Frage: Wäre das für den Anfang nicht sowieso das Sinnvollere?**
+
+</details>
 
 ---
 
