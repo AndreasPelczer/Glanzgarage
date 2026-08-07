@@ -60,9 +60,18 @@ keine Website-Quelle).
 - Der kurze `g.page`-Link ergibt einen **grobkörnigeren** Code als die alte lange Maps-URL —
   scannt aus mehr Abstand und verträgt kleineren Druck.
 
+## Live — vollzogen 07.08.
+Andreas' „push live" um 16:2x. Alle drei Repos gepusht:
+`Glanzgarage 402ce78` · `info-rentus f2b1235` · `deadrabbit-landing d179d40`.
+
+Per `curl` belegt (GitHub Pages brauchte ~30 s):
+- `info-rentus.de` → `g.page/r/CfEteytVLOowEAE/review` ✅
+- `pelczer.de/rentus/` → derselbe Link ✅
+- Routen-Button (`maps/dir`) auf beiden unverändert ✅
+- alle 5 Rezensenten live noch da ✅
+- `info-rentus.de/3d-check/` weiterhin **200** (Buchungs-Wizard unbeschädigt) ✅
+
 ## Offen
-- 🟡 **Push steht aus.** Alle drei Repos sind committet, aber **nicht gepusht** —
-  Andreas' „push live" fehlt noch. Danach: `curl https://info-rentus.de/` gegen `g.page` prüfen.
 - Unverändert offen: Formspree-Code, Versiegelungs-Preisliste, Fauler-Hund-Konditionen,
   Detailtext-Übernahme aus der alten Seite.
 
