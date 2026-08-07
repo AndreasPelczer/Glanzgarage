@@ -55,6 +55,8 @@ Zuerst außerdem: `docs/uebergaben/` (neueste zuerst) + `docs/alte-website-inven
 - Strato/IONOS-Zugangsdaten fasst die KI nicht an; Strato-Kundenmenü/FTP macht Andreas selbst.
 
 ## Offene Klärungen (Mike / Andreas)
-Formspree-Code (Platzhalter `DEIN-FORMSPREE-CODE`) · Google-Bewertungslink (steht auf `#`) ·
+Formspree-Code (Platzhalter `DEIN-FORMSPREE-CODE`) ·
 Versiegelungs-Preisliste · Fauler-Hund-Konditionen · Detailtext-Übernahme aus der alten Seite.
+~~Google-Bewertungslink~~ — **erledigt 07.08.**: `https://g.page/r/CfEteytVLOowEAE/review`,
+im Button und im Flyer-QR. Siehe `docs/uebergaben/2026-08-07-bewertungslink-und-flyer-qr.md`.
 Details: `docs/alte-website-inventur.md`.
