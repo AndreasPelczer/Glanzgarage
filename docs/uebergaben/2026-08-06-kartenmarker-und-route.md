@@ -66,6 +66,18 @@ korrigierte OSM-Karte reicht, entfällt der Aufwand ganz.
 - Sektionszahl 14 unverändert, IDs 32 → 33 (nur der neue `routeLink`).
 - Vor dem Spiegeln per `md5` geprüft: beide Ziele waren exakt der alte Quellstand.
 
+### ✅ Nachtrag 07.08. — ausgeliefert
+GitHub hat sich in der Nacht gefangen („All Systems Operational"). Deploy neu angestoßen,
+lief in unter 30 s durch. Auf beiden Domains gegengeprüft (Cache umgangen): `v=41`,
+`marker=49.80273%2C9.69900`, Route-Knopf mit Ziel „Am Karussell 4, 97280 Remlingen",
+Apple-Karten-Weiche in `main.js`, Datenschutz-Absatz, `.nojekyll` = 200.
+`last-modified` der `main.js` jetzt 07.08. statt 05.08. — echter neuer Stand.
+
+**Der Deploy-Wächter hat dabei versagt:** Er lief nach 3 Stunden aus, während die Störung
+noch anhielt, und meldete das als Erfolg — der Zeitablauf-Pfad endete mit Exit-Code 0.
+Nur durch manuelles Nachsehen fiel es auf. Korrigiert (Zeitablauf = Fehlschlag, Laufzeit
+8 h). **Lehre: Ein Wächter, der bei Zeitablauf „fertig" meldet, ist schlimmer als keiner.**
+
 ### ⏳ Auslieferung hing an GitHub, nicht an uns
 Zum Zeitpunkt dieser Übergabe meldete githubstatus.com **„Incident with Pages –
 Deployment Lag"** (Pages: `degraded_performance`, Actions: `partial_outage`). Beide
